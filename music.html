@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Music Collection</title>
+    <style>
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #8b5cf6;
+            --background-color: #f9fafb;
+            --card-background: #ffffff;
+            --text-color: #1f2937;
+            --text-secondary: #6b7280;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            padding: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .music-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .music-card {
+            background-color: var(--card-background);
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .music-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .album-cover {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            position: relative;
+            overflow: hidden;
+        }
+
+        .album-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .album-icon {
+            position: absolute;
+            font-size: 3rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .music-info {
+            padding: 15px;
+        }
+
+        .music-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .music-info p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .audio-player {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .audio-player audio {
+            width: 100%;
+            height: 40px;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: var(--card-background);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow);
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        .theme-toggle i {
+            font-size: 1.5rem;
+        }
+
+        .dark-mode {
+            --background-color: #1f2937;
+            --card-background: #374151;
+            --text-color: #f9fafb;
+            --text-secondary: #d1d5db;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px 0;
+            color: var(--text-secondary);
+        }
+
+        @media screen and (max-width: 768px) {
+            .music-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .music-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .theme-toggle {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        /* Upload form styles */
+        .upload-section {
+            background-color: var(--card-background);
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .upload-section h2 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .upload-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .form-group label {
+            font-weight: 500;
+        }
+
+        .form-group input, .form-group textarea {
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #d1d5db;
+            font-size: 1rem;
+        }
+
+        .form-group input[type="file"] {
+            padding: 8px;
+        }
+
+        .upload-btn {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+
+        .upload-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Search bar styles */
+        .search-bar {
+            margin-bottom: 30px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-bar input {
+            flex: 1;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid #d1d5db;
+            font-size: 1rem;
+        }
+
+        .search-bar button {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            padding: 0 20px;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+</head>
+<body>
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>My Favorite Music Collection</h1>
+            <p>A personal collection of the best music to enjoy anytime, anywhere</p>
+        </header>
+
+        <div class="upload-section">
+            <h2>Add New Music</h2>
+            <form id="upload-form" class="upload-form">
+                <div class="form-group">
+                    <label for="song-title">Song Title</label>
+                    <input type="text" id="song-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="artist">Artist</label>
+                    <input type="text" id="artist" required>
+                </div>
+                <div class="form-group">
+                    <label for="song-file">MP3 File</label>
+                    <input type="file" id="song-file" accept=".mp3" required>
+                </div>
+                <div class="form-group">
+                    <label for="album-cover">Album Cover (optional)</label>
+                    <input type="file" id="album-cover" accept="image/*">
+                </div>
+                <button type="submit" class="upload-btn">Add to Collection</button>
+            </form>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search by song title or artist...">
+            <button onclick="searchMusic()"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="music-grid" id="music-grid">
+            <!-- Sample music cards - replace with your own -->
+            <div class="music-card">
+                <div class="album-cover">
+                    <img src="/api/placeholder/400/320" alt="Sample Album Cover">
+                </div>
+                <div class="music-info">
+                    <h3>Heartbeat</h3>
+                    <p>Artist: Electronic Dreams</p>
+                    <div class="audio-player">
+                        <audio controls>
+                            <source src="" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music-card">
+                <div class="album-cover">
+                    <img src="/api/placeholder/400/320" alt="Sample Album Cover">
+                </div>
+                <div class="music-info">
+                    <h3>Ocean Waves</h3>
+                    <p>Artist: Ambient Sounds</p>
+                    <div class="audio-player">
+                        <audio controls>
+                            <source src="" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music-card">
+                <div class="album-cover">
+                    <div class="album-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                </div>
+                <div class="music-info">
+                    <h3>Summer Vibes</h3>
+                    <p>Artist: Chill Beats</p>
+                    <div class="audio-player">
+                        <audio controls>
+                            <source src="" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music-card">
+                <div class="album-cover">
+                    <img src="/api/placeholder/400/320" alt="Sample Album Cover">
+                </div>
+                <div class="music-info">
+                    <h3>Night Drive</h3>
+                    <p>Artist: Synthwave</p>
+                    <div class="audio-player">
+                        <audio controls>
+                            <source src="" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 My Music Collection. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            const themeIcon = document.querySelector('.theme-toggle i');
+            if (document.body.classList.contains('dark-mode')) {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            } else {
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            }
+        }
+
+        // Initialize local storage if empty
+        if (!localStorage.getItem('musicCollection')) {
+            const sampleMusic = [
+                {
+                    title: "Heartbeat",
+                    artist: "Electronic Dreams",
+                    coverUrl: "/api/placeholder/400/320",
+                    audioUrl: ""
+                },
+                {
+                    title: "Ocean Waves",
+                    artist: "Ambient Sounds",
+                    coverUrl: "/api/placeholder/400/320",
+                    audioUrl: ""
+                },
+                {
+                    title: "Summer Vibes",
+                    artist: "Chill Beats",
+                    coverUrl: "",
+                    audioUrl: ""
+                },
+                {
+                    title: "Night Drive",
+                    artist: "Synthwave",
+                    coverUrl: "/api/placeholder/400/320",
+                    audioUrl: ""
+                }
+            ];
+            localStorage.setItem('musicCollection', JSON.stringify(sampleMusic));
+        }
+
+        // Handle form submission
+        document.getElementById('upload-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const title = document.getElementById('song-title').value;
+            const artist = document.getElementById('artist').value;
+            const songFile = document.getElementById('song-file').files[0];
+            const albumCover = document.getElementById('album-cover').files[0];
+
+            // In a real application, you'd upload these files to a server
+            // For this demo, we'll create a local URL for the song
+            let audioUrl = '';
+            if (songFile) {
+                audioUrl = URL.createObjectURL(songFile);
+            }
+
+            // For the album cover
+            let coverUrl = '';
+            if (albumCover) {
+                coverUrl = URL.createObjectURL(albumCover);
+            }
+
+            // Add to music collection
+            const newSong = {
+                title: title,
+                artist: artist,
+                coverUrl: coverUrl || "",
+                audioUrl: audioUrl
+            };
+
+            // Get existing collection
+            const collection = JSON.parse(localStorage.getItem('musicCollection')) || [];
+            collection.push(newSong);
+            localStorage.setItem('musicCollection', JSON.stringify(collection));
+
+            // Update the display
+            displayMusicCollection(collection);
+
+            // Reset form
+            document.getElementById('upload-form').reset();
+
+            // Alert user
+            alert('Music added to your collection!');
+        });
+
+        // Function to display music collection
+        function displayMusicCollection(collection) {
+            const musicGrid = document.getElementById('music-grid');
+            musicGrid.innerHTML = '';
+
+            collection.forEach(song => {
+                const card = document.createElement('div');
+                card.className = 'music-card';
+
+                let albumCoverHtml = '';
+                if (song.coverUrl) {
+                    albumCoverHtml = `<img src="${song.coverUrl}" alt="${song.title} Album Cover">`;
+                } else {
+                    albumCoverHtml = `<div class="album-icon"><i class="fas fa-music"></i></div>`;
+                }
+
+                card.innerHTML = `
+                    <div class="album-cover">
+                        ${albumCoverHtml}
+                    </div>
+                    <div class="music-info">
+                        <h3>${song.title}</h3>
+                        <p>Artist: ${song.artist}</p>
+                        <div class="audio-player">
+                            <audio controls>
+                                <source src="${song.audioUrl}" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                `;
+
+                musicGrid.appendChild(card);
+            });
+        }
+
+        // Search functionality
+        function searchMusic() {
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            const collection = JSON.parse(localStorage.getItem('musicCollection')) || [];
+            
+            if (searchTerm === '') {
+                displayMusicCollection(collection);
+                return;
+            }
+
+            const filteredCollection = collection.filter(song => 
+                song.title.toLowerCase().includes(searchTerm) || 
+                song.artist.toLowerCase().includes(searchTerm)
+            );
+
+            displayMusicCollection(filteredCollection);
+        }
+
+        // Search on input change
+        document.getElementById('search-input').addEventListener('input', searchMusic);
+
+        // Load initial collection
+        const initialCollection = JSON.parse(localStorage.getItem('musicCollection')) || [];
+        displayMusicCollection(initialCollection);
+    </script>
+</body>
+</html>
