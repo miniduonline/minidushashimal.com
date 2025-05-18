@@ -1,452 +1,1494 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="sDq05dhRaBG9Xq4CVtI2p5wM8Z0VgHhcM-N_IVyBWCs" />
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Minidu Shashimal - Professional graphic designer and web developer. Explore services, portfolio, and blog.">
-    <meta name="author" content="Minidu Shashimal">
-
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Minidu Shashimal - Front-End Developer & UI/UX Designer">
-    <meta property="og:description" content="Discover cutting-edge front-end development and innovative UI/UX design by Minidu Shashimal. Creating modern and responsive websites with unique web graphics.">
-    <meta property="og:image" content="https://minidushashimal.com/meta.png"> <!-- Replace with a 1200x630px image -->
-    <meta property="og:url" content="https://minidushashimal.com">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Minidu Shashimal - Front-End Developer & UI/UX Designer">
-    <meta name="twitter:description" content="Discover cutting-edge front-end development and innovative UI/UX design by Minidu Shashimal. Creating modern and responsive websites with unique web graphics.">
-    <meta name="twitter:image" content="https://minidushashimal.com/meta.png"> <!-- Replace with a 1200x630px image -->
-   <meta name="google-adsense-account" content="ca-pub-6338685630990891">
-    <!-- Canonical Tag -->
-    <link rel="canonical" href="https://minidushashimal.com" />
-
-    <title>Minidu Shashimal Aluthge</title>
-    <link rel="icon" href="favicon.png" type="image/png" />
-    <link rel="stylesheet" href="style.css" />
-    
-    <script src="https://www.google.com/recaptcha/api.js?render=6LcJKmEqAAAAAAEiVSyHALC92Z3AUUjSJyGfMbHa"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap" rel="stylesheet">
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6338685630990891"
-     crossorigin="anonymous"></script>
-
-    <script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-</script>
-    
-    <!-- Schema.org -->
-   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "@id": "https://minidushashimal.com/#website",
-      "url": "https://minidushashimal.com",
-      "name": "Minidu Shashimal - Graphic Designer & Front-End Developer",
-      "description": "Portfolio of Minidu Shashimal, a professional front-end developer and graphic designer specializing in Facebook ads, YouTube thumbnails, and web development.",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://minidushashimal.com/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    },
-    {
-      "@type": "WebPage",
-      "@id": "https://minidushashimal.com/#webpage",
-      "url": "https://minidushashimal.com",
-      "name": "Minidu Shashimal's Portfolio",
-      "isPartOf": {
-        "@id": "https://minidushashimal.com/#website"
-      },
-      "about": {
-        "@id": "https://minidushashimal.com/#person"
-      },
-      "description": "Explore Minidu Shashimal's portfolio featuring graphic design projects, web development skills, and more.",
-      "breadcrumb": {
-        "@id": "https://minidushashimal.com/#breadcrumb"
-      }
-    },
-    {
-      "@type": "Person",
-      "@id": "https://minidushashimal.com/#person",
-      "name": "Minidu Shashimal",
-      "image": "https://minidushashimal.com/meta.png",
-      "url": "https://minidushashimal.com",
-      "jobTitle": "Graphic Designer & Front-End Developer",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Minidu Shashimal Aluthge"
-      },
-      "sameAs": [
-        "https://github.com/miniduonline",
-        "https://www.facebook.com/miniduonline",
-        "https://www.linkedin.com/in/miniduonline"
-      ]
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://minidushashimal.com/#organization",
-      "name": "Minidu Shashimal Aluthge",
-      "url": "https://minidushashimal.com",
-      "logo": "https://minidushashimal.com/meta.png",
-      "sameAs": [
-        "https://www.facebook.com/miniduonline",
-        "https://www.linkedin.com/in/miniduonline",
-        "https://github.com/miniduonline"
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://minidushashimal.com/#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://minidushashimal.com"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Portfolio",
-          "item": "https://minidushashimal.com/portfolio"
+    <title>EmailPro Validator</title>
+    <link rel="shortcut icon" href="email.png" type="image/png">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --success: #4cc9f0;
+            --danger: #f72585;
+            --warning: #f8961e;
+            --info: #4895ef;
+            --dark: #252422;
+            --light: #f8f9fa;
+            --gradient: linear-gradient(135deg, var(--primary), var(--info));
         }
-      ]
-    }
-  ]
-}
 
-     {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Who is Minidu Shashimal?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Minidu Shashimal is a front-end developer and graphic designer offering services like web development and graphic designing."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What services does Minidu offer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Minidu specializes in front-end development, web design, and graphic design, including YouTube thumbnails, logos, banners, and more."
-      }
-    }
-  ]
-}
-</script>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
+        body {
+            background-color: #f5f5f5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
 
-    <!-- Google tag (gtag.js) -->
-  
-     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W6XRJT39ZH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
 
-  gtag('config', 'G-W6XRJT39ZH');
-</script>
-  </head>
-  <body>
+        header {
+            background: var(--gradient);
+            color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
 
-<amp-auto-ads type="adsense"
-        data-ad-client="ca-pub-6338685630990891">
-</amp-auto-ads>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    
-    <header class="header">
-      <a href="https://minidushashimal.com" class="logo"><span>Minidu Shashimal</span></a>
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
 
-      <ul class="nav-links">
-        <li>
-          <a href="#about">About</a>
-        </li>
+        .logo-icon {
+            font-size: 2rem;
+        }
 
-        <li>
-          <a href="#experience">Experience</a>
-        </li>
+        main {
+            flex: 1;
+            padding: 2rem 0;
+        }
 
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
 
-      </ul>
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
-      <i class="fa-solid fa-bars" id="menu-icon"></i>
-     <a href="https://github.com/miniduonline" target="_blank"> <button class="visit-btn">Visit Github</button></a>
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .validator-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+            padding: 2.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 3rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .validator-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .input-group input:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(67, 97, 238, 0.1);
+        }
+
+        .input-group label {
+            position: absolute;
+            top: -10px;
+            left: 15px;
+            background: white;
+            padding: 0 10px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .validate-btn {
+            width: 100%;
+            background: var(--gradient);
+            color: white;
+            border: none;
+            padding: 1rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .validate-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .validate-btn:hover:not(:disabled) {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        .result-container {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .result-valid {
+            background-color: rgba(76, 201, 240, 0.1);
+            border: 1px solid var(--success);
+        }
+
+        .result-invalid {
+            background-color: rgba(247, 37, 133, 0.1);
+            border: 1px solid var(--danger);
+        }
+
+        .result-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .result-icon {
+            font-size: 2rem;
+        }
+
+        .valid-icon {
+            color: var(--success);
+        }
+
+        .invalid-icon {
+            color: var(--danger);
+        }
+
+        .result-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .feature-section {
+            padding: 3rem 0;
+            background-color: #f9f9f9;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            font-size: 2rem;
+            color: var(--dark);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .feature-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gradient);
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-title {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+        }
+
+        .feature-desc {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.4;
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 3rem 0 1.5rem;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-col {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-title {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            transition: all 0.3s;
+        }
+
+        .social-icon:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #999;
+        }
+
+        .loader {
+            display: none;
+            width: 24px;
+            height: 24px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .progress-container {
+            margin-top: 2rem;
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background-color: #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--gradient);
+            width: 0%;
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+
+        .progress-text {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #777;
+            text-align: center;
+        }
+
+        .history-section {
+            margin-top: 3rem;
+            display: none;
+        }
+
+        .history-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .history-title {
+            font-size: 1.5rem;
+            color: var(--dark);
+        }
+
+        .clear-history-btn, .export-history-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: opacity 0.3s;
+        }
+
+        .clear-history-btn {
+            color: var(--danger);
+        }
+
+        .export-history-btn {
+            color: var(--primary);
+            margin-right: 1rem;
+        }
+
+        .clear-history-btn:hover, .export-history-btn:hover {
+            opacity: 0.8;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        .history-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .history-table th, .history-table td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .history-table th {
+            background-color: #f9f9f9;
+            font-weight: 600;
+            color: #555;
+        }
+
+        .history-table tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .status-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .badge-valid {
+            background-color: rgba(76, 201, 240, 0.15);
+            color: var(--success);
+        }
+
+        .badge-invalid {
+            background-color: rgba(247, 37, 133, 0.15);
+            color: var(--danger);
+        }
+
+        .view-details-btn, .remove-history-btn {
+            background: none;
+            border: none;
+            color: var(--primary);
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+            transition: opacity 0.3s;
+        }
+
+        .remove-history-btn {
+            color: var(--danger);
+        }
+
+        .view-details-btn:hover, .remove-history-btn:hover {
+            opacity: 0.8;
+        }
+
+        .theme-toggle {
+            position: relative;
+            width: 60px;
+            height: 30px;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .toggle-thumb {
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background-color: white;
+            transition: transform 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+        }
+
+        .dark-mode .toggle-thumb {
+            transform: translateX(30px);
+        }
+
+        .dark-mode {
+            background-color: #121212;
+            color: #f5f5f5;
+        }
+
+        .dark-mode .validator-card, 
+        .dark-mode .feature-card {
+            background-color: #1e1e1e;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .dark-mode .input-group input {
+            background-color: #2d2d2d;
+            border-color: #444;
+            color: white;
+        }
+
+        .dark-mode .input-group label {
+            background-color: #1e1e1e;
+            color: #bbb;
+        }
+
+        .dark-mode .feature-section {
+            background-color: #181818;
+        }
+
+        .dark-mode .section-title, 
+        .dark-mode .feature-title {
+            color: #f5f5f5;
+        }
+
+        .dark-mode .feature-desc {
+            color: #bbb;
+        }
+
+        .dark-mode .history-table th {
+            background-color: #222;
+            color: #ddd;
+        }
+
+        .dark-mode .history-table td {
+            border-bottom-color: #333;
+        }
+
+        .dark-mode .history-table tr:hover {
+            background-color: #252525;
+        }
+
+        #history-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        #history-modal.show {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 500px;
+            width: 90%;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .dark-mode .modal-content {
+            background: #2d2d2d;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .validator-card {
+                padding: 1.5rem;
+            }
+
+            .table-wrapper {
+                overflow-x: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .validator-card {
+                padding: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .input-group input {
+                padding: 0.8rem 1rem;
+            }
+
+            .validate-btn {
+                padding: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="logo-icon">✉️</span>
+                    <span>EmailPro Validator</span>
+                </div>
+                <div class="theme-toggle">
+                    <div class="toggle-thumb">☀️</div>
+                </div>
+            </nav>
+        </div>
     </header>
 
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1>Advanced Email Validation Tool</h1>
+                <p>Validate any email address with our powerful, accurate, and comprehensive email validation system</p>
+            </section>
 
-    <section id="about" class="about">
-      <div class="about-container">
-        <img src="profile.png" alt="" loader="eager" />
-        <div class="info-box">
-          <div class="text">
-            <h3>Hello I'm</h3>
-            <h1>Minidu Shashimal</h1>
-            <span>Front-end Developer</span>
-          </div>
-          <div class="btn-group">
-            <div class="btn">Download CV</div>
-            <a href="#contact_wrapper_v1"><div class="btn">Contact</div></a>
-          </div>
-          <div class="socials">
-            <a href="https://github.com/miniduonline"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/miniduonline/"><i class="fa-brands fa-linkedin"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="experience" class="experience">
-      <h2 class="section-title">Experience</h2>
-      <div class="experience-info">
-        <div class="grid">
+            <section class="validator-section">
+                <div class="validator-card">
+                    <form id="validator-form">
+                        <div class="input-group">
+                            <label for="email-input">Email Address</label>
+                            <input type="text" id="email-input" placeholder="Enter email address to validate">
+                        </div>
+                        <button type="submit" class="validate-btn" id="validate-btn">
+                            <span>Validate Email</span>
+                            <div class="loader"></div>
+                        </button>
+                    </form>
 
-          <div class="grid-card">
-            <i class="fa-solid fa-code"></i>
-            <span>Frontend Development</span>
-            <h3>5 Months</h3>
-            <p>Skilled in building visually appealing and responsive websites using the latest technologies.</p>
-          </div>
-          <div class="grid-card">
-            <i class="fa-solid fa-pen-nib"></i>
-            <span>Graphic Design</span>
-            <h3>2 Years</h3>
-            <p>Experienced in creating captivating visuals for brands and projects.</p>
-          </div>
-          <div class="grid-card">
-            <i class="fa-solid fa-user"></i>
-            <span>UI / UX Design</span>
-            <h3>5 Months</h3>
-            <p>Focused on designing user-centered interfaces that are both intuitive and aesthetically pleasing.</p>
-          </div>
-          <div class="grid-card">
-            <i class="fa-solid fa-thumbs-up"></i>
-            <span>Digital Media</span>
-            <h3>1 Years</h3>
-            <p>Proficient in managing and optimizing digital campaigns across platforms.</p>
-          </div>
-        </div>
-        <img src="profile.png" alt="">
-      </div>
-    </section>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <div class="progress-text">Validating email address...</div>
+                    </div>
 
-    <section id="projects" class="projects">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <img src="project1.jpg" alt="">
-          <h3>e-Bill Calc</h3>
-          <p>Electricity Bill Calculator 2025-Sri Lanka</p>
-          <div class="btn-group">
-            <a href="https://ebill.minidushashimal.com" target="_blank"><div class="btn">Live Demo</div></a>
-            <a href="https://github.com/miniduonline/electricity-bill-calculator" target="_blank"><div class="btn">Github Repo</div></a>
-          </div>
-        </div>
-    
-        <div class="project-card">
-          <img src="project2.jpg" alt="">
-          <h3>Treasure Island</h3>
-          <p>Treasure Island - A Python Adventure Game</p>
-          <div class="btn-group">
-           
-            <a href="https://github.com/miniduonline/Treasure-Island-Game"><div class="btn">Github Repo</div></a>
-          </div>
-        </div>
+                    <div class="result-container" id="result-container">
+                        <div class="result-header">
+                            <span class="result-icon" id="result-icon"></span>
+                            <h3 class="result-title" id="result-title"></h3>
+                        </div>
+                    </div>
+                </div>
 
-    
-        <div class="project-card">
-          <img src="project3.jpg" alt="">
-          <h3>Portfolio</h3>
-          <p>My Portfolio Website HTML | CSS |JS</p>
-          <div class="btn-group">
-            <a href="https://minidushashimal.com"><div class="btn">Live</div></a>
-            
-          </div>
-        </div>
-      </div>
-    </section>
-    
+                <div class="history-section" id="history-section">
+                    <div class="history-header">
+                        <h3 class="history-title">Recent Validations</h3>
+                        <div>
+                            <button class="export-history-btn">Export History</button>
+                            <button class="clear-history-btn">Clear History</button>
+                        </div>
+                    </div>
+                    <div class="table-wrapper">
+                        <table class="history-table">
+                            <thead>
+                                <tr>
+                                    <th>Email Address</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="history-table-body"></tbody>
+                        </table>
+                    </div>
+                </div>
 
+                <div id="history-modal">
+                    <div class="modal-content">
+                        <span class="close-modal">×</span>
+                        <h3>Validation Details</h3>
+                        <p><strong>Email:</strong> <span id="modal-email"></span></p>
+                        <p><strong>Status:</strong> <span id="modal-status"></span></p>
+                        <p><strong>Date:</strong> <span id="modal-date"></span></p>
+                        <div id="modal-details"></div>
+                    </div>
+                </div>
+            </section>
 
-    <section class="custom-faq-section">
-      <h1>FAQ</h1>
-      <div class="custom-faq-item">
-        <div class="custom-faq-question">
-          <span>What services do you offer?</span>
-          <button class="custom-toggle-btn">+</button>
+            <section class="feature-section" id="features">
+                <h2 class="section-title">Advanced Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📝</div>
+                        <h3 class="feature-title">Syntax Validation</h3>
+                        <p class="feature-desc">Checks email format against standards.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌐</div>
+                        <h3 class="feature-title">Domain Verification</h3>
+                        <p class="feature-desc">Ensures domain has mail servers.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3 class="feature-title">Disposable Detection</h3>
+                        <p class="feature-desc">Detects temporary email addresses.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3 class="feature-title">Typo Detection</h3>
+                        <p class="feature-desc">Suggests corrections for common typos.</p>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div class="custom-faq-answer">
-          <p>I provide a range of services, including:
-           <br> <br>
-            <li> <b> + Graphic Design:</b> Social media posts, logos, flyers, posters, banners, and more.</li>
-            
-           
-           <br>
-            <li><b>+ Web Development:</b> Custom websites using React.js, including modern, responsive designs.</li>
-            </p>
-        </div>
-      </div>
-      <div class="custom-faq-item">
-        <div class="custom-faq-question">
-          <span>How long will it take to complete my project?</span>
-          <button class="custom-toggle-btn">+</button>
-        </div>
-        <div class="custom-faq-answer">
-          <p>The timeline depends on the complexity of the project. Most graphic designs are completed within 1-2 days, web development projects may take 1–2 weeks. I’ll provide an exact timeframe after discussing your requirements.</p>
-        </div>
-      </div>
-      <div class="custom-faq-item">
-        <div class="custom-faq-question">
-          <span>Do you provide revisions?
-          </span>
-          <button class="custom-toggle-btn">+</button>
-        </div>
-        <div class="custom-faq-answer">
-          <p>Yes, I offer up to 2 free revisions to ensure you’re fully satisfied with the final result. Additional revisions may incur an extra charge.</p>
-        </div>
-      </div>
-      <div class="custom-faq-item">
-        <div class="custom-faq-question">
-          <span>What information do you need to start my project?</span>
-          <button class="custom-toggle-btn">+</button>
-        </div>
-        <div class="custom-faq-answer">
-          <p>Please provide the following:
-              <br> <br>
-            + A clear brief of your requirements.
-            <br>
-            + Relevant files (e.g., text, images, or videos).
-            <br>
-           + Specific preferences (e.g., colors, fonts, or styles).
-            <br>
-            This helps me deliver the best possible results tailored to your needs.</p>
-        </div>
-      </div>
-      <div class="custom-faq-item">
-        <div class="custom-faq-question">
-          <span>How do I make a payment?</span>
-          <button class="custom-toggle-btn">+</button>
-        </div>
-        <div class="custom-faq-answer">
-          <p>Payments can be made via bank transfer, online transfer, or local payment methods. A 50% advance is required to start the project, with the remaining balance due upon completion.</p>
-        </div>
-      </div>
-    </section>
+    </main>
 
-
-   
-    <div  id="contact_wrapper_v1" class="contact_wrapper_v1">
-      <h1 class="contact_heading_v1">Let's start working today!</h1>
-      <p class="contact_subtitle_v1">Have something in mind?</p>
-      <p class="contact_desc_v1">Contact us and we will get back within 24 hours.</p>
-      <div class="contact_btn_group_v1">
-          <a href="mailto:hello@minidushashimal.com" class="contact_btn_v1 contact_book_v1">Book an Appointment</a>
-          <a href="https://wa.me/+94702382336" class="contact_btn_v1 contact_whatsapp_v1">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-              </svg>
-              WhatsApp us
-          </a>
-          <a href="mailto:hello@minidushashimal.com" class="contact_btn_v1 contact_email_v1">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-              </svg>
-              Email Us
-          </a>
-          <a href="tel:+94702382336" class="contact_btn_v1 contact_call_v1">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
-              </svg>
-              Call Us
-          </a>
-      </div>
-  </div>
-    </section>
-
-
-
-    
     <footer>
-      <div class="row">
-        <div class="col-1">
-          <a href="https://minidushashimal.com"><img src="logo2.png" class="logo2"></a>
-          <p>Minidu Shashimal specializes in frontend development, graphic design, digital media, and UI/UX design, delivering creative and user-friendly solutions.</p>
+        <div class="container">
+            <div class="copyright">
+                <p>© 2025 EmailPro Validator. All rights reserved.</p>
+            </div>
         </div>
-        <div class="col-1">
-          <h3>Home <div class="underline"><span></span></div></h3>
-          <p>Kekanadura</p>
-          <p>Matara</p>
-          <p>Sri Lanka</p>
-          <p>81020</p>
-          <p class="email-id">hello@minidushashimal.com</p>
-          <h4>+94 70 238 2336</h4>
-
-        </div>
-        <div class="col-1">
-          <h3>Links<div class="underline"><span></span></h3>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="https://github.com/miniduonline" target="_blank">Visit Github</a></li>
-          </ul>
-        </div>
-        <div class="col-1">
-          <h3>Project  Request<div class="underline"><span></span></h3>
-            <form action="https://api.web3forms.com/submit" method="POST" class="subscribe-form">
-              <input type="hidden" name="access_key" value="730d5f2b-8f44-4e96-9843-212c664a8634">
-              <i class="fa-solid fa-envelope"></i>
-              <input type="email" name="email" placeholder="Enter your email" required>
-              <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
-          </form>
-          
-            
-          <div class="subscribe-success-message" id="subscribeSuccessMessage">
-            <i class="fa-solid fa-circle-check"></i>
-            <h2>Request successfully submitted!</h2>
-            <p>I will get in touch with you soon</p>
-            <button onclick="closeSubscribeMessage()">Close</button>
-        </div>
-
-        <div class="social-icons">
-          <a href="https://www.facebook.com/miniduonline/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://wa.me/+94702382336" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="https://www.x.com/miniduonline/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="https://www.linkedin.com/in/miniduonline/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-        </div>
-          
-
-        </div>
-        </div>
-      </div>
-      <hr>
-      <p class="copyright">© 2025 <a href="https://minidushashimal.com"> Minidu Shashimal Aluthge</a>. All rights reserved. <br>
-        Version 1.1.2 |  Built with HTML 5</p>
     </footer>
 
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // DOM Elements
+    const validatorForm = document.getElementById('validator-form');
+    const emailInput = document.getElementById('email-input');
+    const validateBtn = document.getElementById('validate-btn');
+    const loader = document.querySelector('.loader');
+    const progressContainer = document.querySelector('.progress-container');
+    const progressFill = document.getElementById('progress-fill');
+    const resultContainer = document.getElementById('result-container');
+    const resultIcon = document.getElementById('result-icon');
+    const resultTitle = document.getElementById('result-title');
+    const themeToggle = document.querySelector('.theme-toggle');
+    const toggleThumb = document.querySelector('.toggle-thumb');
+    const historySection = document.getElementById('history-section');
+    const historyTableBody = document.getElementById('history-table-body');
+    const clearHistoryBtn = document.querySelector('.clear-history-btn');
+    const exportHistoryBtn = document.querySelector('.export-history-btn');
+    const historyModal = document.getElementById('history-modal');
+    const closeModal = document.querySelector('.close-modal');
+    const errorMessage = document.getElementById('error-message');
 
+    // Initialize button state
+    validateBtn.disabled = true;
 
- 
-  <script src="script.js">
+    // Theme toggle functionality
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        toggleThumb.innerHTML = document.body.classList.contains('dark-mode') ? '🌙' : '☀️';
+        localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+    });
+
+    // Apply saved theme preference
+    if (localStorage.getItem('theme') === 'dark') {
+        document.body.classList.add('dark-mode');
+        toggleThumb.innerHTML = '🌙';
+    }
+
+    // Load validation history on page load
+    loadValidationHistory();
+
+    // Email input validation
+    emailInput.addEventListener('input', function() {
+        const email = this.value.trim();
+        validateBtn.disabled = !email;
+        
+        if (errorMessage) {
+            errorMessage.textContent = '';
+            errorMessage.style.display = 'none';
+        }
+    });
+
+    // Form submission handler
+    validatorForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = emailInput.value.trim();
+        if (!email) {
+            showError('Please enter an email address');
+            return;
+        }
+        validateEmail(email);
+    });
+
+    // Clear history button handler
+    clearHistoryBtn.addEventListener('click', function() {
+        if (confirm('Are you sure you want to clear the validation history?')) {
+            localStorage.removeItem('emailValidationHistory');
+            historyTableBody.innerHTML = '';
+            historySection.style.display = 'none';
+        }
+    });
+
+    // Export history button handler
+    exportHistoryBtn.addEventListener('click', exportValidationHistory);
+
+    // Modal close button handler
+    closeModal.addEventListener('click', function() {
+        historyModal.classList.remove('show');
+    });
+
+    // Close modal when clicking outside
+    historyModal.addEventListener('click', function(e) {
+        if (e.target === historyModal) {
+            historyModal.classList.remove('show');
+        }
+    });
+
+    // Display error message
+    function showError(message) {
+        if (errorMessage) {
+            errorMessage.textContent = message;
+            errorMessage.style.display = 'block';
+        } else {
+            alert(message);
+        }
+    }
+
+    // Validate email with animation
+    function validateEmail(email) {
+        validateBtn.querySelector('span').style.display = 'none';
+        loader.style.display = 'block';
+        resultContainer.style.display = 'none';
+        progressContainer.style.display = 'block';
+
+        // Reset progress
+        progressFill.style.width = '0%';
+
+        let progress = 0;
+        const progressInterval = setInterval(() => {
+            progress += 5;
+            progressFill.style.width = `${progress}%`;
+            if (progress >= 100) {
+                clearInterval(progressInterval);
+                setTimeout(() => {
+                    displayValidationResults(email);
+                }, 300);
+            }
+        }, 100);
+    }
+
+    // Display validation results
+    function displayValidationResults(email) {
+        validateBtn.querySelector('span').style.display = 'inline';
+        loader.style.display = 'none';
+        progressContainer.style.display = 'none';
+
+        try {
+            const validationResults = performEmailValidation(email);
+
+            resultContainer.style.display = 'block';
+            resultContainer.classList.remove('result-valid', 'result-invalid', 'result-warning');
+            
+            let resultClass = 'result-invalid';
+            if (validationResults.isValid) {
+                resultClass = 'result-valid';
+            } else if (validationResults.warning) {
+                resultClass = 'result-warning';
+            }
+            resultContainer.classList.add(resultClass);
+
+            resultIcon.classList.remove('valid-icon', 'invalid-icon', 'warning-icon');
+            let iconClass = 'invalid-icon';
+            let iconSymbol = '❌';
+            
+            if (validationResults.isValid) {
+                iconClass = 'valid-icon';
+                iconSymbol = '✅';
+            } else if (validationResults.warning) {
+                iconClass = 'warning-icon';
+                iconSymbol = '⚠️';
+            }
+            
+            resultIcon.classList.add(iconClass);
+            resultIcon.innerHTML = iconSymbol;
+
+            resultTitle.innerText = validationResults.isValid ? 'Valid' : (validationResults.warning ? 'Warning' : 'Invalid');
+
+            // Create and display detailed results
+            if (document.getElementById('result-details')) {
+                const detailsContainer = document.getElementById('result-details');
+                detailsContainer.innerHTML = '';
+                
+                validationResults.details.forEach(detail => {
+                    const detailItem = document.createElement('div');
+                    detailItem.classList.add('detail-item');
+                    detailItem.classList.add(detail.isValid ? 'valid-detail' : (detail.warning ? 'warning-detail' : 'invalid-detail'));
+                    
+                    const icon = document.createElement('span');
+                    icon.classList.add('detail-icon');
+                    icon.innerText = detail.isValid ? '✓' : (detail.warning ? '⚠️' : '✗');
+                    
+                    const text = document.createElement('span');
+                    text.classList.add('detail-text');
+                    text.innerText = detail.message;
+                    
+                    detailItem.appendChild(icon);
+                    detailItem.appendChild(text);
+                    detailsContainer.appendChild(detailItem);
+                });
+            }
+
+            saveToHistory(email, validationResults);
+            loadValidationHistory();
+        } catch (error) {
+            showError(`Validation error: ${error.message}`);
+        }
+    }
+
+    // Core email validation logic
+    function performEmailValidation(email) {
+        // Check if email is provided
+        if (!email) {
+            throw new Error('Email is required');
+        }
+
+        // Basic email parts check
+        const parts = email.split('@');
+        if (parts.length !== 2 || !parts[0] || !parts[1]) {
+            return {
+                isValid: false,
+                warning: false,
+                details: [
+                    { name: 'Format', isValid: false, message: 'Email must contain exactly one @ symbol with content before and after' }
+                ]
+            };
+        }
+
+        const localPart = parts[0];
+        const domain = parts[1];
+
+        // Advanced Format Validation using RFC 5322 compliant regex
+        const formatRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const isFormatValid = formatRegex.test(email);
+
+        // Length validation
+        const isLocalPartLengthValid = localPart.length <= 64;
+        const isDomainLengthValid = domain.length <= 255;
+        const isTotalLengthValid = email.length <= 254;
+        const isLengthValid = isLocalPartLengthValid && isDomainLengthValid && isTotalLengthValid;
+        
+        // Local part validation
+        const localPartRegex = /^[a-zA-Z0-9!#$%&'*+\-/=?^_`{|}~.]+$/;
+        const isLocalPartValid = localPartRegex.test(localPart) && !localPart.startsWith('.') && !localPart.endsWith('.') && !localPart.includes('..');
+        
+        // Domain validation
+        const domainRegex = /^[a-zA-Z0-9](?:[a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?)*$/;
+        const isDomainValid = domainRegex.test(domain);
+        
+        // TLD validation
+        const tld = domain.split('.').pop();
+        const isValidTLD = tld && tld.length >= 2;
+        
+        // Disposable domain check
+        const disposableDomains = [
+            'mailinator.com', 'tempmail.com', 'throwawaymail.com', '10minutemail.com', 
+            'guerrillamail.com', 'yopmail.com', 'mailnesia.com', 'temp-mail.org',
+            'fakeinbox.com', 'tempinbox.com', 'emailfake.com', 'sharklasers.com',
+            'dispostable.com', 'maildrop.cc', 'getairmail.com', 'getnada.com',
+            'temp-mail.io', 'trashmail.com', 'spamgourmet.com', 'mytemp.email'
+        ];
+        const isDisposable = disposableDomains.includes(domain.toLowerCase());
+        
+        // Common typo detection
+        const commonTypos = {
+            "gamil.com": "gmail.com",
+            "gmial.com": "gmail.com",
+            "gmali.com": "gmail.com",
+            "gmil.com": "gmail.com",
+            "gmai.com": "gmail.com",
+            "gmal.com": "gmail.com",
+            "gmail.co": "gmail.com",
+            "yahho.com": "yahoo.com",
+            "yaho.com": "yahoo.com",
+            "yahooo.com": "yahoo.com",
+            "yaoo.com": "yahoo.com",
+            "yhaoo.com": "yahoo.com",
+            "hotmal.com": "hotmail.com",
+            "hotmial.com": "hotmail.com",
+            "hotmali.com": "hotmail.com",
+            "hotmil.com": "hotmail.com",
+            "hotmai.com": "hotmail.com",
+            "hotnail.com": "hotmail.com",
+            "outlok.com": "outlook.com",
+            "outloo.com": "outlook.com",
+            "outllok.com": "outlook.com",
+            "outloook.com": "outlook.com"
+        };
+        const isTypo = commonTypos.hasOwnProperty(domain.toLowerCase());
+        const suggestedDomain = isTypo ? commonTypos[domain.toLowerCase()] : null;
+        
+        // Simulated MX record check (would be replaced with actual API in production)
+        // In a real implementation, this would be a server-side API call to check DNS records
+        const hasMxRecords = getSimulatedMxStatus(domain);
+        
+        // Role-based email detection
+        const roleBasedLocalParts = [
+            'info', 'support', 'admin', 'sales', 'contact', 'help', 'team', 'office',
+            'marketing', 'billing', 'service', 'mail', 'webmaster', 'postmaster',
+            'hostmaster', 'abuse', 'noc', 'security', 'no-reply', 'noreply', 'hr'
+        ];
+        const isRoleBased = roleBasedLocalParts.includes(localPart.toLowerCase());
+        
+        // Free email provider detection
+        const freeEmailDomains = [
+            'gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 'aol.com',
+            'icloud.com', 'mail.com', 'protonmail.com', 'zoho.com', 'yandex.com',
+            'gmx.com', 'live.com', 'mail.ru', 'inbox.com', 'tutanota.com'
+        ];
+        const isFreeProvider = freeEmailDomains.includes(domain.toLowerCase());
+        
+        // Temporary domain detection
+        const temporaryDomains = ['mailinator.com', 'tempmail.com', 'temp-mail.org'];
+        const isTemporary = temporaryDomains.includes(domain.toLowerCase());
+        
+        // Mailbox existence simulation (would be an actual API call in production)
+        // In a real implementation, this would be a server-side SMTP call to verify the mailbox
+        const isMailboxValid = simulateMailboxValidation(email, isFormatValid, hasMxRecords);
+        
+        // Spam trap detection (simulated)
+        const isSpamTrap = email.includes('spam') || email.includes('trap');
+        
+        // Determine overall validity
+        // Crucial failures (make email invalid)
+        const crucialChecks = isFormatValid && isLengthValid && isLocalPartValid && isDomainValid && isValidTLD;
+        
+        // Warning conditions (email is usable but with caution)
+        const hasWarnings = isDisposable || isRoleBased || isTypo || !hasMxRecords || !isMailboxValid;
+        
+        // Final validity determination
+        const isValid = crucialChecks && !isSpamTrap && !isTemporary;
+        
+        // Detailed results for display
+        const details = [
+            { 
+                name: 'Format', 
+                isValid: isFormatValid, 
+                warning: false,
+                message: isFormatValid ? 'Valid email format' : 'Invalid email format' 
+            },
+            { 
+                name: 'Length', 
+                isValid: isLengthValid, 
+                warning: false,
+                message: isLengthValid ? 'Valid length' : (
+                    !isLocalPartLengthValid ? 'Local part exceeds 64 characters' : 
+                    !isDomainLengthValid ? 'Domain exceeds 255 characters' : 
+                    'Email exceeds 254 characters'
+                )
+            },
+            { 
+                name: 'Domain', 
+                isValid: isDomainValid && isValidTLD, 
+                warning: !hasMxRecords,
+                message: !isDomainValid ? 'Invalid domain format' : 
+                         !isValidTLD ? 'Invalid top-level domain' :
+                         !hasMxRecords ? 'Domain lacks mail servers (MX records)' :
+                         'Domain has valid mail servers' 
+            }
+        ];
+        
+        // Add mailbox validation result
+        if (isFormatValid && isDomainValid && isValidTLD) {
+            details.push({ 
+                name: 'Mailbox', 
+                isValid: isMailboxValid, 
+                warning: !isMailboxValid,
+                message: isMailboxValid ? 'Mailbox exists and is accepting mail' : 'Mailbox may not exist or is rejecting mail'
+            });
+        }
+        
+        // Add disposable email check
+        if (isDisposable) {
+            details.push({ 
+                name: 'Disposable', 
+                isValid: false, 
+                warning: true,
+                message: 'Disposable email detected - may not be reliable for long-term contact'
+            });
+        }
+        
+        // Add temporary email check
+        if (isTemporary) {
+            details.push({ 
+                name: 'Temporary', 
+                isValid: false, 
+                warning: false,
+                message: 'Temporary email detected - not suitable for registration'
+            });
+        }
+        
+        // Add typo check
+        if (isTypo) {
+            details.push({ 
+                name: 'Typo Check', 
+                isValid: false, 
+                warning: true,
+                message: `Possible typo in domain, did you mean "${suggestedDomain}"?`
+            });
+        }
+        
+        // Add role-based email check
+        if (isRoleBased) {
+            details.push({ 
+                name: 'Role-based', 
+                isValid: true, 
+                warning: true,
+                message: 'Role-based email detected - may not belong to a specific person'
+            });
+        }
+        
+        // Add free provider check
+        if (isFreeProvider) {
+            details.push({ 
+                name: 'Provider Type', 
+                isValid: true, 
+                warning: false,
+                message: 'Free email provider'
+            });
+        } else if (!isDisposable && !isTemporary) {
+            details.push({ 
+                name: 'Provider Type', 
+                isValid: true, 
+                warning: false,
+                message: 'Corporate/Custom domain'
+            });
+        }
+        
+        // Add spam trap check
+        if (isSpamTrap) {
+            details.push({ 
+                name: 'Spam Trap', 
+                isValid: false, 
+                warning: false,
+                message: 'Potential spam trap detected'
+            });
+        }
+        
+        return { isValid, warning: !isValid && hasWarnings, details };
+    }
+
+    // Simulated MX record check (to be replaced with actual API in production)
+    function getSimulatedMxStatus(domain) {
+        // Common domains we know have MX records
+        const knownValidDomains = [
+            'gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 'aol.com',
+            'icloud.com', 'protonmail.com', 'zoho.com', 'mail.com', 'yandex.com',
+            'gmx.com', 'tutanota.com', 'mail.ru', 'microsoft.com', 'apple.com',
+            'amazon.com', 'facebook.com', 'twitter.com', 'linkedin.com', 'google.com'
+        ];
+        
+        // If it's a known domain, return true
+        if (knownValidDomains.includes(domain.toLowerCase())) {
+            return true;
+        }
+        
+        // For domains we don't recognize, use a probability-based approach
+        // In a real implementation, this would be replaced with an actual DNS lookup
+        const domainLength = domain.length;
+        const hasCommonTLD = /\.(com|org|net|edu|gov|mil|io|co|us|uk|ca|de|fr|au|jp)$/.test(domain.toLowerCase());
+        
+        // Domains with common TLDs and reasonable length are more likely to be valid
+        if (hasCommonTLD && domainLength > 5 && domainLength < 20) {
+            return Math.random() > 0.2; // 80% chance of having MX records
+        }
+        
+        // Arbitrary domains have a lower chance
+        return Math.random() > 0.5; // 50% chance of having MX records
+    }
+
+    // Simulate mailbox validation (to be replaced with actual SMTP check in production)
+    function simulateMailboxValidation(email, isFormatValid, hasMxRecords) {
+        if (!isFormatValid || !hasMxRecords) {
+            return false;
+        }
+        
+        const [localPart, domain] = email.split('@');
+        
+        // Common domains we can simulate with higher accuracy
+        const commonDomains = ['gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com'];
+        
+        if (commonDomains.includes(domain.toLowerCase())) {
+            // Simulate specific provider rules
+            // Gmail: doesn't allow dots in local part for validation purposes
+            if (domain.toLowerCase() === 'gmail.com') {
+                const normalizedLocalPart = localPart.replace(/\./g, '').toLowerCase();
+                // Common patterns that are unlikely to be real
+                if (normalizedLocalPart.length < 5 || /^[a-z]+$/.test(normalizedLocalPart) || /^[0-9]+$/.test(normalizedLocalPart)) {
+                    return false;
+                }
+            }
+            
+            // Return true for most reasonable looking emails on major providers
+            return !/^(test|user|admin|info|support|noreply|no-reply|postmaster)$/.test(localPart.toLowerCase());
+        }
+        
+        // For other domains, use heuristics
+        // Very short local parts are less likely to be valid
+        if (localPart.length < 3) {
+            return Math.random() > 0.7;
+        }
+        
+        // Excessively long local parts are suspicious
+        if (localPart.length > 30) {
+            return Math.random() > 0.6;
+        }
+        
+        // Default case - reasonable probability of being valid
+        return Math.random() > 0.3;
+    }
+
+    // Save validation result to history
+    function saveToHistory(email, results) {
+        let history = getValidationHistory();
+        
+        // Check if this email is already in history
+        const existingIndex = history.findIndex(item => item.email.toLowerCase() === email.toLowerCase());
+        
+        // Create history entry
+        const historyEntry = {
+            email,
+            isValid: results.isValid,
+            warning: results.warning || false,
+            date: new Date().toISOString(),
+            details: results.details
+        };
+        
+        // Update or add entry
+        if (existingIndex !== -1) {
+            history[existingIndex] = historyEntry;
+        } else {
+            history.unshift(historyEntry);
+        }
+        
+        // Keep maximum 20 entries
+        if (history.length > 20) {
+            history = history.slice(0, 20);
+        }
+        
+        // Save to localStorage
+        try {
+            localStorage.setItem('emailValidationHistory', JSON.stringify(history));
+        } catch (error) {
+            console.error('Error saving to history:', error);
+        }
+    }
+
+    // Get validation history from localStorage
+    function getValidationHistory() {
+        try {
+            return JSON.parse(localStorage.getItem('emailValidationHistory')) || [];
+        } catch (error) {
+            console.error('Error loading history:', error);
+            return [];
+        }
+    }
+
+    // Load and display validation history
+    function loadValidationHistory() {
+        const history = getValidationHistory();
+        
+        if (history.length > 0) {
+            historySection.style.display = 'block';
+            historyTableBody.innerHTML = '';
+            
+            history.forEach((entry, index) => {
+                const row = document.createElement('tr');
+                
+                // Determine status class
+                let statusClass = 'badge-invalid';
+                let statusText = 'Invalid';
+                
+                if (entry.isValid) {
+                    statusClass = 'badge-valid';
+                    statusText = 'Valid';
+                } else if (entry.warning) {
+                    statusClass = 'badge-warning';
+                    statusText = 'Warning';
+                }
+                
+                row.innerHTML = `
+                    <td>${entry.email}</td>
+                    <td><span class="status-badge ${statusClass}">${statusText}</span></td>
+                    <td>${formatDate(new Date(entry.date))}</td>
+                    <td>
+                        <button class="view-details-btn" data-index="${index}">View Details</button>
+                        <button class="remove-history-btn" data-index="${index}">Remove</button>
+                    </td>
+                `;
+                historyTableBody.appendChild(row);
+            });
+            
+            // Add event listeners to buttons
+            attachHistoryButtonListeners();
+        } else {
+            historySection.style.display = 'none';
+        }
+    }
+
+    // Format date for display
+    function formatDate(date) {
+        try {
+            return date.toLocaleString(undefined, {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        } catch (error) {
+            return 'Invalid date';
+        }
+    }
+
+    // Attach event listeners to history buttons
+    function attachHistoryButtonListeners() {
+        document.querySelectorAll('.view-details-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const index = parseInt(this.getAttribute('data-index'));
+                showHistoryDetails(index);
+            });
+        });
+
+        document.querySelectorAll('.remove-history-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const index = parseInt(this.getAttribute('data-index'));
+                removeHistoryItem(index);
+            });
+        });
+    }
+
+    // Show details modal for history item
+    function showHistoryDetails(index) {
+        const history = getValidationHistory();
+        const entry = history[index];
+        
+        if (entry) {
+            document.getElementById('modal-email').innerText = entry.email;
+            
+            // Set status text and class
+            const statusElement = document.getElementById('modal-status');
+            statusElement.innerText = entry.isValid ? 'Valid' : (entry.warning ? 'Warning' : 'Invalid');
+            statusElement.className = '';
+            statusElement.classList.add(
+                entry.isValid ? 'status-valid' : (entry.warning ? 'status-warning' : 'status-invalid')
+            );
+            
+            document.getElementById('modal-date').innerText = formatDate(new Date(entry.date));
+            
+            // Display details
+            const detailsContainer = document.getElementById('modal-details');
+            detailsContainer.innerHTML = '';
+            
+            entry.details.forEach(detail => {
+                const detailElement = document.createElement('div');
+                detailElement.classList.add('modal-detail-item');
+                
+                // Add appropriate class based on status
+                if (!detail.isValid) {
+                    detailElement.classList.add(detail.warning ? 'detail-warning' : 'detail-invalid');
+                } else {
+                    detailElement.classList.add('detail-valid');
+                }
+                
+                detailElement.innerHTML = `
+                    <span class="detail-icon">${detail.isValid ? '✓' : (detail.warning ? '⚠️' : '✗')}</span>
+                    <span class="detail-name">${detail.name}:</span>
+                    <span class="detail-message">${detail.message}</span>
+                `;
+                
+                detailsContainer.appendChild(detailElement);
+            });
+            
+            // Show modal
+            historyModal.classList.add('show');
+        }
+    }
+
+    // Remove item from history
+    function removeHistoryItem(index) {
+        let history = getValidationHistory();
+        
+        try {
+            // Remove the item
+            history.splice(index, 1);
+            
+            // Save updated history
+            localStorage.setItem('emailValidationHistory', JSON.stringify(history));
+            
+            // Refresh history display
+            loadValidationHistory();
+        } catch (error) {
+            console.error('Error removing history item:', error);
+            showError('Failed to remove history item');
+        }
+    }
+
+    // Export validation history to CSV
+    function exportValidationHistory() {
+        const history = getValidationHistory();
+        
+        if (history.length === 0) {
+            showError('No history to export');
+            return;
+        }
+        
+        try {
+            // Generate CSV header
+            let csvContent = 'Email,Status,Date,Details\n';
+            
+            // Add each history entry to CSV
+            history.forEach(entry => {
+                // Format details for CSV
+                const details = entry.details
+                    .map(d => `${d.name}: ${d.message.replace(/"/g, '""')}`)
+                    .join('; ');
+                
+                // Format status
+                const status = entry.isValid ? 'Valid' : (entry.warning ? 'Warning' : 'Invalid');
+                
+                // Format date
+                const date = formatDate(new Date(entry.date));
+                
+                // Add CSV row (properly escaped for CSV format)
+                csvContent += `"${entry.email.replace(/"/g, '""')}","${status}","${date.replace(/"/g, '""')}","${details}"\n`;
+            });
+            
+            // Create and download the CSV file
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            link.setAttribute('href', URL.createObjectURL(blob));
+            link.setAttribute('download', `email_validation_history_${new Date().toISOString().split('T')[0]}.csv`);
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        } catch (error) {
+            console.error('Error exporting history:', error);
+            showError('Failed to export history');
+        }
+    }
+    
+    // Add keyboard shortcuts for accessibility
+    document.addEventListener('keydown', function(e) {
+        // Escape key closes modal
+        if (e.key === 'Escape' && historyModal.classList.contains('show')) {
+            historyModal.classList.remove('show');
+        }
+    });
+});
     </script>
-
-  </body>
-</html>  
+</body>
+</html>
